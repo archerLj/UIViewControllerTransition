@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="转场动画一" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-yE-bYr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9XO-KK-tMg"/>
+                                    <constraint firstAttribute="height" constant="80" id="fyP-cY-vct"/>
+                                </constraints>
+                                <state key="normal" image="Oval"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sE-JR-8ci"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tak-yE-bYr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5uM-NE-J8W"/>
+                            <constraint firstItem="Tak-yE-bYr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKY-UY-lTL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="slW-KT-37W">
+            <objects>
+                <viewController storyboardIdentifier="nextViewControllerSB" id="W7z-do-ko1" customClass="NextViewController" customModule="转场动画一" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xiO-eG-Y43"/>
+                        <viewControllerLayoutGuide type="bottom" id="uif-aN-lOV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fGf-Fm-n7e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ZI2-eH-pQJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="GSk-jf-M7k"/>
+                                    <constraint firstAttribute="width" constant="90" id="bkV-Xt-I3V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArcherLj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-7O-Y1b">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这家伙太懒，啥也没留下..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKt-ZH-ust">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZI2-eH-pQJ" firstAttribute="centerX" secondItem="fGf-Fm-n7e" secondAttribute="centerX" id="BCD-N5-gy6"/>
+                            <constraint firstAttribute="trailing" secondItem="SKt-ZH-ust" secondAttribute="trailing" constant="15" id="E3F-Mg-aoA"/>
+                            <constraint firstItem="SKt-ZH-ust" firstAttribute="leading" secondItem="fGf-Fm-n7e" secondAttribute="leading" constant="15" id="HO2-T2-4hP"/>
+                            <constraint firstItem="Ael-7O-Y1b" firstAttribute="top" secondItem="ZI2-eH-pQJ" secondAttribute="bottom" constant="20" id="JBy-6k-gEM"/>
+                            <constraint firstItem="SKt-ZH-ust" firstAttribute="top" secondItem="Ael-7O-Y1b" secondAttribute="bottom" constant="15" id="OSd-7g-0qh"/>
+                            <constraint firstItem="Ael-7O-Y1b" firstAttribute="centerX" secondItem="fGf-Fm-n7e" secondAttribute="centerX" id="XM6-I7-9Ex"/>
+                            <constraint firstItem="ZI2-eH-pQJ" firstAttribute="top" secondItem="xiO-eG-Y43" secondAttribute="bottom" constant="200" id="YdE-Mp-iPN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ZI2-eH-pQJ" id="kUl-J2-Vdv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7V-jh-a12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Oval" width="80" height="80"/>
+        <image name="头像.jpeg" width="90" height="90"/>
+    </resources>
+</document>
